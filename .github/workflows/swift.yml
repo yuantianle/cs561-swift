@@ -22,7 +22,7 @@ jobs:
     - name: Run the mock server
       working-directory: ./myapp
       run: |
-        node app.js
+        node app.js &
     - name: Run tests
       working-directory: ./MyLibrary
       run: swift test -v
