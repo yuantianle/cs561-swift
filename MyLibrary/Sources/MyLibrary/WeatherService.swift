@@ -11,7 +11,7 @@ enum BaseURL: String{
 
 
 class WeatherServiceImpl: WeatherService {
-    let url = "\(BaseURL.openWeatherMap.rawValue)/data/2.5/weather?lat=44.5646&lon=123.2620&appid=1f9d4aeb62f58286235d57f5a02a7808"
+    let url = "\(BaseURL.mockServer.rawValue)/data/2.5/weather?lat=44.5646&lon=123.2620&appid=1f9d4aeb62f58286235d57f5a02a7808"
 
     func getTemperature() async throws -> Int {
         return try await withCheckedThrowingContinuation { continuation in
