@@ -19,6 +19,10 @@ jobs:
     - name: Build
       working-directory: ./MyLibrary
       run: swift build -v
+    - name: Run the mock server
+      working-directory: ./myapp
+      run: |
+        node app.js
     - name: Run tests
       working-directory: ./MyLibrary
       run: swift test -v
