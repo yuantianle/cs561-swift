@@ -6,7 +6,7 @@ public protocol WeatherService {
 
 enum BaseURL: String{
     case openWeatherMap = "https://api.openweathermap.org"
-    case mockServer = "http://host.docker.internal:3000"
+    case mockServer = "http://localhost:3000"//"http://host.docker.internal:3000"
 }
 
 
